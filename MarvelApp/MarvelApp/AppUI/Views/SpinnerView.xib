@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpinnerView" customModule="PilgrimSocialApp" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="HTL-2e-tUP" id="Zxu-0b-HW3"/>
+                <outlet property="indicatorView" destination="ZtL-uS-cQo" id="t6Y-I7-aNd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTL-2e-tUP">
+                    <rect key="frame" x="162" y="318.5" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="FuR-ir-F2Z"/>
+                        <constraint firstAttribute="height" constant="50" id="aGa-at-5gk"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ZtL-uS-cQo">
+                    <rect key="frame" x="169" y="325" width="37" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZtL-uS-cQo" firstAttribute="centerY" secondItem="HTL-2e-tUP" secondAttribute="centerY" id="Kba-hQ-CHj"/>
+                <constraint firstItem="ZtL-uS-cQo" firstAttribute="centerX" secondItem="HTL-2e-tUP" secondAttribute="centerX" id="XIn-jf-IXa"/>
+                <constraint firstItem="HTL-2e-tUP" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="pVJ-9n-fpD"/>
+                <constraint firstItem="HTL-2e-tUP" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="sqa-na-hJV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
