@@ -22,3 +22,8 @@ struct NetworkAPINames {
     static let PublicKey = "publicKey"
     static let baseURL = "http://gateway.marvel.com"
 }
+
+struct UITests {
+    static let characterNameIdentifier = "nameCharacterLabel"
+    static let dateModifiedIdentifier = "dateModifiedLabel"
+}

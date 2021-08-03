@@ -10,8 +10,12 @@ import UIKit
 class PreviewCharacterTableViewCell: UITableViewCell {
     
     @IBOutlet weak var thumbnailImageView: UIImageView!
-    @IBOutlet weak var nameCharacterLabel: UILabel!
-    @IBOutlet weak var modifiedDateLabel: UILabel!
+    @IBOutlet weak var nameCharacterLabel: UILabel! {
+        didSet { nameCharacterLabel.accessibilityLabel = UITests.characterNameIdentifier }
+    }
+    @IBOutlet weak var modifiedDateLabel: UILabel! {
+        didSet { modifiedDateLabel.accessibilityLabel = UITests.dateModifiedIdentifier }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
