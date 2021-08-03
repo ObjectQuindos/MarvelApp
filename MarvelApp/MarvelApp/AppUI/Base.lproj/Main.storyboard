@@ -158,11 +158,17 @@
                                 <rect key="frame" x="30" y="743" width="66" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Comics"/>
+                                <connections>
+                                    <action selector="showComicsAction:" destination="ZeD-xf-oJb" eventType="touchUpInside" id="W0o-E6-24f"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHW-vK-00u">
                                 <rect key="frame" x="332" y="743" width="62" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Stories"/>
+                                <connections>
+                                    <action selector="showStoriesAction:" destination="ZeD-xf-oJb" eventType="touchUpInside" id="tiF-zk-Vtd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kC4-oH-1tY"/>

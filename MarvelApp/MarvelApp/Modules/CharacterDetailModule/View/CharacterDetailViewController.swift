@@ -20,6 +20,10 @@ class CharacterDetailViewController: BaseViewController {
     var presentor: ViewToPresenterCharacterInfoProtocol?
     var character: Character?
     
+    lazy var moreInfoViewController: MoreInfoCharacterViewController = {
+        return MoreInfoCharacterViewController()
+    }()
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -32,6 +36,18 @@ class CharacterDetailViewController: BaseViewController {
         guard let character = self.character, let thumbnailURL = self.character?.thumbnail?.completeURLPath() else { return }
         KFDownloader(url: thumbnailURL, withImageView: self.imgView).startDownload()
         presentor?.startFetchingCharacterInfo(character: character)
+    }
+    
+    // MARK: - Actions
+    
+    @IBAction func showComicsAction(_ sender: UIButton) {
+        self.moreInfoViewController.resource = self.character!.comics
+        presentPanModal(self.moreInfoViewController)
+    }
+    
+    @IBAction func showStoriesAction(_ sender: UIButton) {
+        self.moreInfoViewController.resource = self.character!.stories
+        presentPanModal(self.moreInfoViewController)
     }
 }
 
