@@ -11,6 +11,6 @@ class RootRouter: RootRouterProtocol {
     
     func presentRootScreen(in window: UIWindow) {
         window.makeKeyAndVisible()
-        window.rootViewController = UIViewController()
+        window.rootViewController = CharactersRouter.createModule()
     }
 }

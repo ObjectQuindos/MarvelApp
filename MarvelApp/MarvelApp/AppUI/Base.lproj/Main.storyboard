@@ -104,9 +104,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="modifiedDateLabel" destination="0fz-o5-mnv" id="JPs-vT-lLu"/>
-                                            <outlet property="nameCharacterLabel" destination="Gly-8c-qmr" id="qpW-C4-Xvh"/>
-                                            <outlet property="thumbnailImageView" destination="Yal-Uk-gGZ" id="r7Z-S3-YjI"/>
+                                            <outlet property="modifiedDateLabel" destination="0fz-o5-mnv" id="ncG-BE-GRp"/>
+                                            <outlet property="nameCharacterLabel" destination="Gly-8c-qmr" id="gmd-VG-4no"/>
+                                            <outlet property="thumbnailImageView" destination="Yal-Uk-gGZ" id="E0B-Pb-WGw"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -126,7 +126,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="4Bk-49-NJM" id="XQK-F0-P2E"/>
+                        <outlet property="tableView" destination="4Bk-49-NJM" id="vYk-eE-cOF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oJy-iY-ymZ" sceneMemberID="firstResponder"/>
