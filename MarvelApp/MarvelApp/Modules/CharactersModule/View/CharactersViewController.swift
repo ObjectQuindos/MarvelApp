@@ -15,6 +15,8 @@ class CharactersViewController: BaseViewController {
     var presentor: ViewToPresenterProtocol?
     var characters: [Character] = []
     
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

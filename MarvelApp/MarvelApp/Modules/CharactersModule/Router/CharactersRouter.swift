@@ -28,6 +28,8 @@ class CharactersRouter: PresenterToRouterProtocol {
     }
     
     func pushToCharacterDetailScreen(navigation: UINavigationController, character: Character) {
-        
+        let characterDetailModule = CharacterInfoRouter.createModule()
+        characterDetailModule.character = character
+        navigation.pushViewController(characterDetailModule, animated: true)
     }
 }
